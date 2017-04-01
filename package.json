@@ -12,6 +12,7 @@
     "less": "^2.7.2",
     "less-loader": "^4.0.3",
     "vue": "^2.2.2",
+    "vue-cli": "^2.8.1",
     "vue-router": "^2.2.0"
   },
   "devDependencies": {
