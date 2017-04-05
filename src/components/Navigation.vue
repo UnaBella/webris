@@ -21,19 +21,19 @@
   @import "../assets/stylesheets/base01.less";
 
   .nav {
-    height: 4rem;
+    height: 40px;
     background-color: @basec1;
-    box-shadow: 0 .1rem .1rem rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
     ul {
-      height: 4rem;
+      height: 40px;
       li {
         float: left;
         box-sizing: border-box;
-        padding: 0 1rem;
-        margin: 0 3rem;
+        padding: 0 10px;
+        margin: 0 30px;
         color: @fc5;
-        height: 4rem;
-        line-height: 4rem;
+        height: 40px;
+        line-height: 40px;
         font-size: @fz2;
         &:hover {
           background-color: darken(@basec1, 9%);

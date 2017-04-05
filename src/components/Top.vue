@@ -34,8 +34,8 @@
 
   .top {
     box-sizing: border-box;
-    height: 5.6rem;
-    padding-top: 1.2rem;
+    height: 56px;
+    padding-top: 12px;
   }
 
 </style>
