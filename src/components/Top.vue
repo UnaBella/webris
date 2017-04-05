@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="top">
     <brand :data="brandData"></brand>
   </div>
 </template>
@@ -28,5 +28,12 @@
 </script>
 
 <style lang="less" scoped>
+
+  .top {
+    box-sizing: border-box;
+    height: 56px;
+    padding-top: 12px;
+    padding-left: 12px;
+  }
 
 </style>

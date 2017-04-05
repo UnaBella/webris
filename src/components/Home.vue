@@ -1,18 +1,18 @@
 <template>
-  <div class="main">
+  <div>
     <top></top>
+    <navigation></navigation>
   </div>
 </template>
 
 <script>
   import Top from './Top.vue';
+  import Navigation from './Navigation.vue';
   export default {
     data () {
       return {}
     },
-    components: {
-      Top
-    }
+    components: {Top, Navigation}
   }
 </script>
 
