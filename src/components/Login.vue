@@ -119,7 +119,7 @@
             width: 100%;
             height: 2.8rem;
             border: 1px solid #999;
-            border-radius: @borradus1;
+            border-radius: @borradius1;
             box-sizing: border-box;
             margin-bottom: 1.8rem;
             padding-left: 2.8rem;
@@ -136,7 +136,7 @@
             height: 3.2rem;
             background-color: @basec1;
             border: none;
-            border-radius: @borradus1;
+            border-radius: @borradius1;
             color: @fc6;
             margin-top: 12.4rem;
             box-shadow: 0 .1rem .2rem rgba(0, 0, 0, 0.2);
