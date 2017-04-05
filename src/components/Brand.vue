@@ -41,12 +41,12 @@
       h2 {
         margin: 0;
         &:first-child {
-          font-size: 16px;
+          font-size: 1.6rem;
         }
         &:last-child {
           color: @fcbase;
           font-family: Arial, serif;
-          font-size: 12px;
+          font-size: 1.4rem;
         }
       }
     }

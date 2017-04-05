@@ -38,6 +38,7 @@
         &:hover {
           background-color: darken(@basec1, 9%);
           color: @fc6;
+          cursor: pointer;
         }
       }
     }
