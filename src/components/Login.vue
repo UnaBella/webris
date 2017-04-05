@@ -1,5 +1,5 @@
 <template>
-    <div class="wrapper" ref="bg">
+    <div class="wrapper">
         <!--粒子背景动画-->
         <div class="particleground"></div>
         <div class="outerpanel">
@@ -64,7 +64,7 @@
         .outerpanel {
             height: 460px;
             width: 860px;
-            background-color: #fff;
+            background-color: @fc6;
             opacity: 0.86;
             border-radius: 20px;
             box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
@@ -82,17 +82,17 @@
                     &:nth-of-type(1) {
                         margin-top: 134px;
                         font-size: 28px;
-                        color: #fff;
+                        color: @fc6;
                     }
                     &:nth-of-type(2) {
                         font-size: 28px;
-                        color: #fff;
+                        color: @fc6;
                         margin-top: 12px;
                     }
                     &:nth-of-type(3) {
-                        font-family: 'Arial Regular', serif;
-                        font-size: 16px;
-                        color: #f0f0f0;
+                        /*font-family: 'Arial Regular', serif;*/
+                        font-size: @fz2;
+                        color: @fc6;
                         margin-top: 28px;
                     }
                 }
@@ -111,7 +111,7 @@
                     }
                     span {
                         position: absolute;
-                        color: #333;
+                        color: @fc1;
                         margin-top: 7px;
                         margin-left: 10px;
                     }
@@ -123,28 +123,28 @@
                         box-sizing: border-box;
                         margin-bottom: 18px;
                         padding-left: 28px;
-                        color: #333;
+                        color: @fc1;
                         &:focus {
-                            border-color: @baseColor-green;
+                            border-color: @basec1;
                         }
                         &:hover {
-                            border-color: @baseColor-green;
+                            border-color: @basec1;
                         }
                     }
                     button {
                         width: 100%;
                         height: 32px;
-                        background-color: @baseColor-green;
+                        background-color: @basec1;
                         border: none;
                         border-radius: 4px;
-                        color: #fff;
+                        color: @fc6;
                         margin-top: 124px;
                         box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
                         &:hover {
-                            background-color: darken(@baseColor-green, 5%);
+                            background-color: darken(@basec1, 5%);
                         }
                         &:active {
-                            background-color: darken(@baseColor-green, 8%);
+                            background-color: darken(@basec1, 8%);
                         }
                     }
                 }
@@ -157,7 +157,7 @@
         bottom: 40px;
         min-width: 300px;
         text-align: center;
-        font-size: 12px;
-        color: #fff;
+        font-size: @fz4;
+        color: @fc6;
     }
 </style>
