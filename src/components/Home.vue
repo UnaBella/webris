@@ -4,7 +4,7 @@
   </div>
 </template>
 
-<script>
+<script type="text">
 export default {
   name: 'hello',
   data () {
@@ -17,6 +17,6 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="less" scoped>
-  @import "../stylesheets/colors01.less";
+
 
 </style>
