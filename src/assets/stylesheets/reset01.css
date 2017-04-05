@@ -3,14 +3,17 @@
   padding: 0;
   border: 0;
 }
+
 html {
   font-size: 62.5%;
 }
+
 body {
-  font-family: 微软雅黑,serif;
+  font-family: 微软雅黑, serif;
   font-size: 1.4rem;
-  min-width: 1024px;
+  min-width: 102.4rem;
 }
+
 blockquote,
 body,
 button,
@@ -40,11 +43,13 @@ ul {
   margin: 0;
   padding: 0;
 }
+
 caption,
 td,
 th {
   font-size: 1.4rem;
 }
+
 h1,
 h2,
 h3,
@@ -54,6 +59,7 @@ h6 {
   font-weight: 400;
   font-size: 100%;
 }
+
 address,
 caption,
 cite,
@@ -66,29 +72,36 @@ var {
   font-style: normal;
   font-weight: 400;
 }
+
 a {
   color: #555;
   text-decoration: none;
 }
+
 a:hover {
   text-decoration: underline;
 }
+
 button,
 input,
 textarea {
   outline: 0;
 }
+
 img {
   border: none;
 }
+
 li,
 ol,
 ul {
   list-style: none;
 }
+
 table {
   border-collapse: collapse;
 }
+
 .clearfix:after {
   content: ".";
   display: block;
@@ -96,6 +109,13 @@ table {
   clear: both;
   visibility: hidden;
 }
+
 ::-webkit-input-placeholder {
   color: #999;
+}
+
+.wrap {
+  width: 102.4rem;
+  margin: 0 auto;
+  height: 100%;
 }

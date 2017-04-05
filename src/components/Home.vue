@@ -1,7 +1,12 @@
 <template>
-  <div>
-    <top></top>
-    <navigation></navigation>
+  <div id="home">
+    <div class="header">
+      <top></top>
+      <navigation></navigation>
+    </div>
+    <div class="main">
+
+    </div>
   </div>
 </template>
 
@@ -17,6 +22,15 @@
 </script>
 
 <style lang="less" scoped>
-
-
+#home{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+  .main {
+    height: 100%;
+    background-image: url(../assets/images/bg.png);
+    -webkit-background-size: 100% auto;
+    background-size: 100% auto;
+  }
 </style>

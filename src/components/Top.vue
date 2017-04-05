@@ -1,11 +1,14 @@
 <template>
   <div class="top">
-    <brand :data="brandData"></brand>
+    <div class="wrap">
+      <brand :data="brandData"></brand>
+    </div>
   </div>
 </template>
 
 <script>
   import Brand from './Brand.vue';
+
   export default {
     data(){
       return {
@@ -31,9 +34,8 @@
 
   .top {
     box-sizing: border-box;
-    height: 56px;
-    padding-top: 12px;
-    padding-left: 12px;
+    height: 5.6rem;
+    padding-top: 1.2rem;
   }
 
 </style>

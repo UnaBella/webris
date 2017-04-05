@@ -21,6 +21,10 @@
 <style lang="less" scoped>
   @import "../assets/stylesheets/base01.less";
 
+  .wrap {
+    background-color: red;
+  }
+
   .brand {
     height: 34px;
     display: inline-block;
