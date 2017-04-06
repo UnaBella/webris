@@ -1,13 +1,15 @@
 <template>
-  <div class="top">
+  <div class="topbar">
     <div class="wrap">
-      <brand :data="brandData"></brand>
+      <brand class="brand" :data="brandData"></brand>
+      <account class="account" :data="accountData"></account>
     </div>
   </div>
 </template>
 
 <script>
   import Brand from './TopBar_Brand.vue';
+  import Account from './TopBar_Account.vue';
 
   export default {
     data(){
@@ -19,23 +21,31 @@
          * */
         brandData: {
           url: '../static/img/logo.png',
-          title1: '岱江Saas影像诊断平台',
+          title1: '岱江Saas影像运维平台',
           title2: 'Daijiang Saas image diagnosis platform'
+        },
+        accountData: {
+          name: '欧阳娜娜',
+          list: [{text: '账户信息'}, {text: '修改密码'}, {text: '退出　　'}]
         }
       }
     },
-    components: {
-      Brand
-    }
+    components: {Brand, Account}
   };
 </script>
 
 <style lang="less" scoped>
 
-  .top {
+  .topbar {
     box-sizing: border-box;
     height: 56px;
-    padding-top: 12px;
+    padding-bottom: 10px;
+    .wrap {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
   }
+
 
 </style>

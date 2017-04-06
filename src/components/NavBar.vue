@@ -35,6 +35,7 @@
         height: 40px;
         line-height: 40px;
         font-size: @fz2;
+        user-select: none;
         &:hover {
           background-color: darken(@basec1, 9%);
           color: @fc6;

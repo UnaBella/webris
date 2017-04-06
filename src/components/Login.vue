@@ -11,12 +11,12 @@
       <div class="rightpanel">
         <form action="javascript:void(0)">
           <label for="username">
-            <span class="icon-user-md"></span>
+            <i class="icon-user-md"></i>
             <input id="username" type="text" placeholder="请输入用户名">
           </label>
           <br>
           <label for="password">
-            <span class="icon-lock"></span>
+            <i class="icon-lock"></i>
             <input id="password" type="text" placeholder="请输入密码">
           </label>
           <button>登录</button>
@@ -109,7 +109,7 @@
           label {
             position: relative;
           }
-          span {
+          i {
             position: absolute;
             color: @fc1;
             margin-top: 7px;
