@@ -30,7 +30,7 @@
   .main {
     height: 100%;
     background-image: url(../assets/images/bg.png);
-    -webkit-background-size: 100% auto;
-    background-size: 100% auto;
+    -webkit-background-size: cover;
+    background-size: cover;
   }
 </style>

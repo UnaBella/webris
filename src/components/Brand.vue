@@ -1,7 +1,7 @@
 <template>
   <div class="brand">
-    <img src='../assets/images/logo.png' alt="logo">
-    <div class="sub-box">
+    <img class="logo" src='../assets/images/logo.png' alt="logo">
+    <div class="name">
       <h2>{{data.title1}}</h2>
       <h2>{{data.title2}}</h2>
     </div>
@@ -10,7 +10,6 @@
 
 <script>
   export default {
-    name: 'brand',
     data() {
       return {}
     },
@@ -21,19 +20,15 @@
 <style lang="less" scoped>
   @import "../assets/stylesheets/base01.less";
 
-  .wrap {
-    background-color: red;
-  }
-
   .brand {
     height: 34px;
     display: inline-block;
-    img {
+    .logo {
       height: 100%;
       float: left;
       margin-right: 10px;
     }
-    .sub-box {
+    .name {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -41,12 +36,12 @@
       h2 {
         margin: 0;
         &:first-child {
-          font-size: 16px;
+          font-size: 1.6rem;
         }
         &:last-child {
           color: @fcbase;
           font-family: Arial, serif;
-          font-size: 12px;
+          font-size: 1.2rem;
         }
       }
     }
