@@ -11,8 +11,8 @@
 </template>
 
 <script>
-  import Top from './Top.vue';
-  import Navigation from './Navigation.vue';
+  import Top from './TopBar.vue';
+  import Navigation from './NavBar.vue';
   export default {
     data () {
       return {}

@@ -7,7 +7,7 @@
 </template>
 
 <script>
-  import Brand from './Brand.vue';
+  import Brand from './TopBar_Brand.vue';
 
   export default {
     data(){
