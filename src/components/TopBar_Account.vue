@@ -1,6 +1,6 @@
 <template>
   <div class="account">
-    <i class="icon-user"></i>
+    <i class="iconfont icon-user"></i>
     <span>{{data.name}}</span>
     <i class="icon-angle-down"></i>
     <div>
@@ -25,11 +25,12 @@
 
   .account {
     display: inline-block;
-    height: 20px;
     cursor: pointer;
+    position: relative;
+    padding: 10px;
     // 字体图标
     i {
-      font-size: 1.6rem;
+      font-size: 1.8rem;
       display: inline-block;
       transition: 0.2s;
     }
@@ -41,14 +42,16 @@
     }
     // 下拉菜单
     div {
-      border-radius: @borradius1;
-      display: none;
-      position: relative;
-      z-index: 999;
+      width: calc(100% - 20px);
+      position: absolute;
+      /*left: 0;*/
+      top: 100%;
       box-sizing: border-box;
       background-color: @bgc-td;
       border: 1px solid @basec1;
+      border-radius: @borradius1;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      display: none;
       ul {
         li {
           height: 24px;

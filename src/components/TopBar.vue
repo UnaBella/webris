@@ -39,7 +39,6 @@
   .topbar {
     box-sizing: border-box;
     height: 56px;
-    padding-bottom: 10px;
     .wrap {
       display: flex;
       justify-content: space-between;

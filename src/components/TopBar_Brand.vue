@@ -23,6 +23,7 @@
   .brand {
     height: 34px;
     display: inline-block;
+    padding: 10px;
     .logo {
       height: 100%;
       float: left;
