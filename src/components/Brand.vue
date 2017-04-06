@@ -41,7 +41,7 @@
         &:last-child {
           color: @fcbase;
           font-family: Arial, serif;
-          font-size: 1.2rem;
+          font-size: 1.4rem;
         }
       }
     }
