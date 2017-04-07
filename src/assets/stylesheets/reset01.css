@@ -96,6 +96,7 @@ table {
   color: #999;
 }
 .wrap {
+  position: relative;
   width: 1024px;
   margin: 0 auto;
   height: 100%;

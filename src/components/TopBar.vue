@@ -1,5 +1,5 @@
 <template>
-  <div class="topbar">
+  <div class="topbar-container">
     <div class="wrap">
       <brand class="brand"
              :data="brandData"></brand>
@@ -31,7 +31,7 @@
 </script>
 
 <style lang="less" scoped>
-  .topbar {
+  .topbar-container {
     height: 56px;
     .wrap {
       padding: 0 10px 10px;

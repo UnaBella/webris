@@ -1,5 +1,5 @@
 <template>
-    <div class="brand">
+    <div class="brand-container">
         <div class="brand-logo">
             <img src="../assets/images/logo.png"
                  alt="logo">
@@ -20,7 +20,7 @@
 <style lang="less" scoped>
     @import "../assets/stylesheets/base01.less";
 
-    .brand {
+    .brand-container {
         display: inline-block;
         height: 34px;
         .brand-logo {

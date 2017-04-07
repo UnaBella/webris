@@ -55,7 +55,8 @@
         position: absolute;
         display: none;
         width: 106px;
-        left: ~"calc(50% - 53px)";
+        /*left: ~"calc(50% - 53px)";*/
+        right: 0;
         padding-top: 10px;
         z-index: 99;
         ul {

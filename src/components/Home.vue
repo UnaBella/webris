@@ -1,8 +1,8 @@
 <template>
   <div id="home">
     <div class="header">
-      <top></top>
-      <navigation></navigation>
+      <top-bar></top-bar>
+      <nav-bar :data=menus></nav-bar>
     </div>
     <div class="main">
 
@@ -11,22 +11,34 @@
 </template>
 
 <script>
-  import Top from './TopBar.vue';
-  import Navigation from './NavBar.vue';
+  import TopBar from './TopBar.vue';
+  import NavBar from './NavBar.vue';
   export default {
     data () {
-      return {}
+      return {
+        menus: [
+          {
+            text: '1',
+            subMenus: [
+              {
+                text: '2',
+              }
+            ]
+          },
+        ]
+      }
     },
-    components: {Top, Navigation}
+    components: {TopBar, NavBar},
   }
 </script>
 
 <style lang="less" scoped>
-#home{
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-}
+  #home {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+
   .main {
     height: 100%;
     background-image: url(../assets/images/bg.png);
