@@ -5,20 +5,22 @@
         <li>1</li>
         <li class="dropdown">2
 
+
+
           <ul class="sub-menu">
-            <li><a href="#">1</a></li>
-            <li><a href="#">2</a></li>
-            <li><a href="#">3</a></li>
-            <li class="dropdown">
-              <a href="#">4</a>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li class="dropdown">4
+
+
               <ul class="sub-menu">
-                <li><a href="#">1</a></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><a href="#">4</a></li>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
               </ul>
             </li>
-            <li><a href="#">5</a></li>
+            <li>5</li>
           </ul>
         </li>
       </ul>
@@ -36,10 +38,10 @@
     mounted(){
       $('.dropdown').hover(
         function () {
-          $(this).children('.sub-menu').slideDown(100);
+          $(this).children('.sub-menu').show();
         },
         function () {
-          $(this).children('.sub-menu').slideUp(100);
+          $(this).children('.sub-menu').hide();
         }
       );
     }
@@ -53,7 +55,7 @@
     height: 40px;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
     background-color: @basec1;
-    li{
+    li {
       cursor: pointer;
     }
   }
@@ -88,11 +90,13 @@
     padding: 0 10px;
     text-align: center;
     border-bottom: 1px solid @borc-secsplit;
+    color: @fc1;
     &:last-child {
       border: none;
     }
     &:hover {
       background-color: @basec1;
+      color: @fc6;
     }
   }
 

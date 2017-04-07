@@ -65,8 +65,8 @@
             background-color: @bgc-td;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
             li {
-                height: 24px;
-                line-height: 24px;
+                height: 36px;
+                line-height: 36px;
                 padding: 0 10px;
                 text-align: right;
                 border-bottom: 1px solid @borc-secsplit;
