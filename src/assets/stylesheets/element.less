@@ -3,8 +3,8 @@
 .btn {
   background-color: @basec1;
   color: @fc5;
-  height: 2.6rem;
-  padding: 0 .6rem;
+  height: 0.26rem;
+  padding: 0 .06rem;
   border: none;
   border-radius: @borradius1;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
@@ -20,28 +20,28 @@
 .btn-reverse {
   background-color: @bgc-gray;
   color: @basec1;
-  height: 2.6rem;
-  padding: 0 .6rem;
+  height: .26rem;
+  padding: 0 .06rem;
   border: 1px solid @basec1;
   border-radius: @borradius1;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 .del-popup {
-  width: 30rem;
+  width: 3rem;
   border-radius: @borradius2;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
   border: 1px solid @borc-popup;
   .header {
-    height: 4rem;
+    height: .4rem;
     background-color: @bgc-popup-head;
     border-radius: @borradius2 @borradius2 0 0;
     .icon {
       //margin-left: 10px;
     }
     .title {
-      line-height: 4rem;
-      font-size: 1.6rem;
+      line-height: .4rem;
+      font-size: .16rem;
       font-weight: bold;
     }
   }
@@ -50,12 +50,13 @@
     background-color: @bgc-popup;
   }
   .btn-group {
-    height: 4rem;
+    height: .4rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    button {
-      margin: 0 1rem;
+    background-color: @bgc-popup;
+    button{
+      margin: 0 .1rem;
     }
   }
 }

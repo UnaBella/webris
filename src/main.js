@@ -19,7 +19,7 @@ new Vue({
 var el = document.getElementsByTagName("html")[0];
 var w;
 var mw = 1024;
-var mfz = 10;
+var mfz = 100;
 update();
 window.onresize = update;
 function update() {
