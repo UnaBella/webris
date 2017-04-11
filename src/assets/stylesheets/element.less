@@ -1,62 +1,117 @@
 @import "./reset01.less";
 // 按钮
 .btn {
-  background-color: @basec1;
+  background-color: @btn-default;
   color: @fc5;
   height: 0.26rem;
   padding: 0 .06rem;
   border: none;
   border-radius: @borradius1;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 .01rem .02rem rgba(0, 0, 0, 0.2);
+  font-size: 0.14rem;
   &:hover {
     color: @fc5;
+    background-color: lighten(@btn-default, 5%);
   }
-  &[disabled] {
-    background-color: @fc2;
-    color: @bgc-gray;
+  &:active {
+    background-color: darken(@btn-default, 5%);
   }
+}
+
+button[disabled],
+button[disabled]:hover,
+button[disabled]:active {
+  background-color: @btn-disabled;
+  color: greyscale(@bgc-gray);
 }
 
 .btn-reverse {
-  background-color: @bgc-gray;
+  background-color: @btn-reverse;
   color: @basec1;
   height: .26rem;
   padding: 0 .06rem;
-  border: 1px solid @basec1;
+  border: .01rem solid @borcbase;
   border-radius: @borradius1;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 .01rem .02rem rgba(0, 0, 0, 0.2);
+  font-size: 0.14rem;
+  &:hover {
+    //color: @fc5;
+    background-color: lighten(@bgc-gray, 5%);
+  }
+  &:active {
+    background-color: @bgc-gray;
+  }
 }
 
-.del-popup {
+.popup {
   width: 3rem;
   border-radius: @borradius2;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-  border: 1px solid @borc-popup;
-  .header {
+  box-shadow: 0 0 .05rem rgba(0, 0, 0, 0.2);
+  border: .01rem solid @borc-popup;
+  div:nth-of-type(1) {
     height: .4rem;
     background-color: @bgc-popup-head;
     border-radius: @borradius2 @borradius2 0 0;
-    .icon {
-      //margin-left: 10px;
+    display: flex;
+    align-items: center;
+    i {
+      margin-left: .2rem;
+      margin-right: .1rem;
+      font-size: 0.3rem;
+      color: red;
+      line-height: .4rem;
     }
-    .title {
+    span {
       line-height: .4rem;
       font-size: .16rem;
       font-weight: bold;
     }
   }
-  .content {
-    height: 200px;
+  div:nth-of-type(2) {
     background-color: @bgc-popup;
+    border-top: .01rem solid @borc-popupsplit;
+    border-bottom: .01rem solid @borc-popupsplit;
+    padding: .2rem;
+    text-align: center;
   }
-  .btn-group {
+  div:nth-of-type(3) {
     height: .4rem;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: @bgc-popup;
-    button{
+    border-radius: 0 0 @borradius2 @borradius2;
+    button {
       margin: 0 .1rem;
     }
   }
 }
+
+.bubble {
+  max-width: 2.3rem;
+  border: .01rem solid @borcbase;
+  padding: .1rem;
+  background-color: @bgc-fill;
+  border-radius: @borradius2;
+  position: relative;
+  z-index: @z-index2;
+  text-align: justify;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+  P {
+    color: @fc1;
+  }
+  &:before {
+    content: '';
+    display: block;
+    width: .08rem;
+    height: .08rem;
+    background-color: @bgc-fill;
+    position: absolute;
+    top: -0.049rem;
+    left: .2rem;
+    border-left: .01rem solid @borcbase;
+    border-top: .01rem solid @borcbase;
+    transform: rotate(45deg);
+  }
+}
+

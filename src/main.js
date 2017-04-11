@@ -23,6 +23,6 @@ var mfz = 100;
 update();
 window.onresize = update;
 function update() {
-  w = innerWidth;
+  w = innerWidth > 1024 ? innerWidth : 1024;
   el.style.fontSize = w / (mw / mfz) + "px";
 }

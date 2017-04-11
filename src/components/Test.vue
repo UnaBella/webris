@@ -1,26 +1,37 @@
 <template>
   <div class="container">
+    <!--按钮-->
     <button class="btn">default</button>
     <button class="btn" disabled>disabled</button>
     <br><br>
-    <!--<button class="btn-login">send</button>
-    <button class="btn-login" disabled>send</button>-->
-    <div class="del-popup">
-      <!--标题-->
-      <div class="header">
-        <i class="icon"></i>
-        <p class="title">删除提示</p>
+    <!--提示框-->
+    <div class="popup">
+      <div>
+        <i class="iconfont icon-error"></i>
+        <span>删除提示</span>
       </div>
-      <div class="content">
+      <div>
         <p>我是提示文本</p>
       </div>
-      <div class="btn-group">
-        <!--取消按钮-->
+      <div>
         <button class="btn-reverse">取消</button>
-        <!--确定按钮-->
         <button class="btn">确定</button>
       </div>
     </div>
+    <br>
+    <!--提示信息-->
+    <div class="bubble">
+      <p>我是提示信息</p>
+    </div>
+    <br>
+
+
+    <div class="table">
+
+
+
+    </div>
+
   </div>
 </template>
 
@@ -40,7 +51,8 @@
   @import "../assets/stylesheets/element.less";
 
   .container {
-    min-height: 768px;
-    padding: 10px;
+    min-height: 100vh;
+    padding: 20px;
+    background-color: #fff;
   }
 </style>
