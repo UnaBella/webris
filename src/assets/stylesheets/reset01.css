@@ -124,7 +124,3 @@ table {
   background-color: #9f9f9f;
   -webkit-border-radius: 4px;
 }
-body {
-  transform: translateZ(0);
-  -webkit-transform: translateZ(0);
-}
