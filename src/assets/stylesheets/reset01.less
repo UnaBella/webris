@@ -1,6 +1,6 @@
 *{box-sizing:border-box;user-select: none;cursor:default}
 html{font-size:62.5%}
-body{font-family:微软雅黑,serif;font-size:1.4rem;min-width:1024px}
+body{font-family:微软雅黑,serif;font-size:.14rem;min-width:1024px}
 blockquote,body,button,code,dd,div,dl,dt,fieldset,form,h1,h2,h3,h4,h5,h6,input,legend,li,ol,p,pre,td,textarea,th,ul{margin:0;padding:0}
 caption,td,th{font-size:.14rem}
 h1,h2,h3,h4,h5,h6{font-weight:400;font-size:100%}
@@ -13,3 +13,30 @@ table{border-collapse:collapse}
 .clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}
 ::-webkit-input-placeholder{color:#999}
 .wrap{position:relative;width:1024px;margin:0 auto;height:100%}
+::-webkit-scrollbar-track-piece {
+  background-color: #fff;
+  -webkit-border-radius: 0;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  height: 50px;
+  background-color: #999;
+  -webkit-border-radius: 4px;
+  outline: 2px solid #fff;
+  outline-offset: -2px;
+  border: 2px solid #fff;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  height: 50px;
+  background-color: #9f9f9f;
+  -webkit-border-radius: 4px;
+}
+body{
+  transform:translateZ(0); -webkit-transform:translateZ(0);
+}
