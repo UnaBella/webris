@@ -1,150 +1,204 @@
 @import "./reset01.less";
 // 按钮
 .btn {
-  background-color: @btn-default;
-  color: @fc5;
-  min-height: 26px;
-  padding: 0 .06rem;
-  border: none;
-  border-radius: @borradius1;
-  box-shadow: 0 .01rem .02rem rgba(0, 0, 0, 0.2);
-  font-size: 0.14rem;
-  &:hover {
+    background-color: @btn-default;
     color: @fc5;
-    background-color: lighten(@btn-default, 5%);
-  }
-  &:active {
-    background-color: darken(@btn-default, 5%);
-  }
+    min-height: 26px;
+    padding: 0 .06rem;
+    border: none;
+    border-radius: @borradius1;
+    box-shadow: 0 .01rem .02rem rgba(0, 0, 0, 0.2);
+    font-size: 0.14rem;
+    &:hover {
+        color: @fc5;
+        background-color: lighten(@btn-default, 5%);
+    }
+    &:active {
+        background-color: darken(@btn-default, 5%);
+    }
 }
 
 button[disabled],
 button[disabled]:hover,
 button[disabled]:active {
-  background-color: @btn-disabled;
-  color: greyscale(@bgc-gray);
+    background-color: @btn-disabled;
+    color: greyscale(@bgc-gray);
 }
 
 //按钮反转
 .btn-reverse {
-  background-color: @btn-reverse;
-  color: @basec1;
-  min-height: 26px;
-  padding: 0 .06rem;
-  border: .01rem solid @borcbase;
-  border-radius: @borradius1;
-  box-shadow: 0 .01rem .02rem rgba(0, 0, 0, 0.2);
-  font-size: 0.14rem;
-  &:hover {
-    //color: @fc5;
-    background-color: lighten(@bgc-gray, 5%);
-  }
-  &:active {
-    background-color: @bgc-gray;
-  }
+    background-color: @btn-reverse;
+    color: @basec1;
+    min-height: 26px;
+    padding: 0 .06rem;
+    border: .01rem solid @borcbase;
+    border-radius: @borradius1;
+    box-shadow: 0 .01rem .02rem rgba(0, 0, 0, 0.2);
+    font-size: 0.14rem;
+    &:hover {
+        //color: @fc5;
+        background-color: lighten(@bgc-gray, 5%);
+    }
+    &:active {
+        background-color: @bgc-gray;
+    }
 }
 
 //弹出框
 .popup {
-  width: 3rem;
-  border-radius: @borradius2;
-  box-shadow: 0 0 .05rem rgba(0, 0, 0, 0.2);
-  border: .01rem solid @borc-popup;
-  div:nth-of-type(1) {
-    min-height: 40px;
-    background-color: @bgc-popup-head;
-    border-radius: @borradius2 @borradius2 0 0;
-    display: flex;
-    align-items: center;
-    i {
-      margin-left: .2rem;
-      margin-right: .1rem;
-      font-size: 0.3rem;
-      color: red;
-      line-height: .4rem;
+    width: 3rem;
+    border-radius: @borradius2;
+    box-shadow: 0 0 .05rem rgba(0, 0, 0, 0.2);
+    border: .01rem solid @borc-popup;
+    div:nth-of-type(1) {
+        min-height: 40px;
+        background-color: @bgc-popup-head;
+        border-radius: @borradius2 @borradius2 0 0;
+        display: flex;
+        align-items: center;
+        i {
+            margin-left: .2rem;
+            margin-right: .1rem;
+            font-size: 0.3rem;
+            color: red;
+            line-height: .4rem;
+        }
+        span {
+            line-height: .4rem;
+            font-size: .16rem;
+            font-weight: bold;
+        }
     }
-    span {
-      line-height: .4rem;
-      font-size: .16rem;
-      font-weight: bold;
+    div:nth-of-type(2) {
+        background-color: @bgc-popup;
+        border-top: .01rem solid @borc-popupsplit;
+        border-bottom: .01rem solid @borc-popupsplit;
+        padding: .2rem;
+        text-align: center;
     }
-  }
-  div:nth-of-type(2) {
-    background-color: @bgc-popup;
-    border-top: .01rem solid @borc-popupsplit;
-    border-bottom: .01rem solid @borc-popupsplit;
-    padding: .2rem;
-    text-align: center;
-  }
-  div:nth-of-type(3) {
-    min-height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: @bgc-popup;
-    border-radius: 0 0 @borradius2 @borradius2;
-    button {
-      margin: 0 .1rem;
+    div:nth-of-type(3) {
+        min-height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: @bgc-popup;
+        border-radius: 0 0 @borradius2 @borradius2;
+        button {
+            margin: 0 .1rem;
+        }
     }
-  }
 }
 
 //聊天气泡
 .bubble {
-  max-width: 2.3rem;
-  border: .01rem solid @borcbase;
-  padding: .1rem;
-  background-color: @bgc-fill;
-  border-radius: @borradius2;
-  position: relative;
-  z-index: @z-index2;
-  text-align: justify;
-  box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
-  P {
-    color: @fc1;
-  }
-  &:before {
-    content: '';
-    display: block;
-    width: .08rem;
-    height: .08rem;
+    max-width: 2.3rem;
+    border: .01rem solid @borcbase;
+    padding: .1rem;
     background-color: @bgc-fill;
-    position: absolute;
-    top: -0.049rem;
-    left: .2rem;
-    border-left: .01rem solid @borcbase;
-    border-top: .01rem solid @borcbase;
-    transform: rotate(45deg);
-  }
+    border-radius: @borradius2;
+    position: relative;
+    z-index: @z-index2;
+    text-align: justify;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+    P {
+        color: @fc1;
+    }
+    &:before {
+        content: '';
+        display: block;
+        width: .08rem;
+        height: .08rem;
+        background-color: @bgc-fill;
+        position: absolute;
+        top: -0.049rem;
+        left: .2rem;
+        border-left: .01rem solid @borcbase;
+        border-top: .01rem solid @borcbase;
+        transform: rotate(45deg);
+    }
 }
 
 // 表格
 .table {
-
-  table {
-    display: block;
+    font-size: 0;
     width: 500px;
+    max-height: 300px;
     overflow-x: auto;
-    thead, tbody, tr {
-      display: block;
+    table {
+        display: block;
+        width: 1000px;
+        position: relative;
+        tr {
+            display: flex;
+        }
+        th, td {
+            display: inline-block;
+            flex-grow: 1;
+            border: 1px solid gray;
+        }
+        th {
+            background-color: mediumseagreen;
+        }
+        tr:first-child {
+            position: absolute;
+            width: 1000px;
+            top: 0;
+            left: 0;
+        }
     }
-    th, td {
-      display: inline-block;
+}
+
+.input {
+    display: inline-block;
+    height: .26rem;
+    label {
+        display: inline-block;
+        height: 100%;
+        span {
+            float: left;
+            line-height: .26rem;
+            em {
+                color: #f00;
+            }
+        }
+        div {
+            margin-left: .1rem;
+            float: left;
+            height: .26rem;
+            display: flex;
+            align-items: center;
+            input {
+                background-color: @bgc-fill;
+                width: 1.5rem;
+                height: .26rem;
+                border: .01rem solid @borc-inp;
+                border-radius: @borradius1;
+                padding: 0 .1rem;
+                font-size: .14rem;
+                &:hover {
+                    border-color: @borcbase;
+                }
+                &:focus {
+                    border-color: darken(@borcbase, 10%);
+                }
+                &[disabled] {
+                    background-color: darken(@bgc-fill, 5%);
+                    color: @fc2;
+                    &:hover {
+                        border-color: @borc-inp;
+                    }
+                    &:active {
+                        border-color: @borcbase;
+                    }
+                }
+            }
+        }
     }
-    thead {
-      width: calc(100% - 2px);
-      background-color: mediumseagreen;
+}
+
+.required {
+    span:before {
+        content: '*';
+        color: red;
     }
-    tbody {
-      height: 200px;
-      overflow: auto;
-      background-color: rosybrown;
-    }
-    tr {
-    }
-    th, td {
-      width: 100px;
-      border: 1px solid gray;
-    }
-  }
 }
